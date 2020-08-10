@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { TodoList } from './TodoList';
 import { AddTodoForm } from './AddTodoForm';
 
+import './App.css';
+
 const initialTodos: Todo[] = [
   {
     text: 'Play with cat',
@@ -35,7 +37,8 @@ const App: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className='app'>
+      <h1>TODO APP WITH REACT TYPESCRIPT</h1>
       <TodoList todos={todos} toggleTodo={toggleTodo} />
       <AddTodoForm addTodo={addTodo} />
     </div>
