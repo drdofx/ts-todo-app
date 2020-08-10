@@ -24,6 +24,7 @@ export const AddTodoForm: React.FC<Props> = ({ addTodo }) => {
         type="text"
         value={text}
         onChange={handleChange}
+        style={{ width: "300px" }}
       />
       <button 
         type="submit"

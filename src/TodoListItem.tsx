@@ -1,12 +1,14 @@
 import React from 'react';
 
+import './App.css';
+
 interface Props {
   todo: Todo;
   toggleTodo: ToggleTodo;
 }
 
 export const TodoListItem: React.FC<Props> = ({ todo, toggleTodo }) => (
-  <div>
+  <div className='item'>
     <label 
       style={{ textDecoration: todo.completed ? 'line-through' : undefined }}
     >
